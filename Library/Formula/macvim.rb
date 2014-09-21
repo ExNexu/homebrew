@@ -36,7 +36,7 @@ class Macvim < Formula
     ENV.clang if MacOS.version >= :lion
 
     # macvim only works with the current Ruby.framework because it builds with -framework Ruby
-    system_ruby = "/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/ruby"
+    system_ruby = "/usr/local/bin/ruby"
 
     args = %W[
       --with-features=huge
